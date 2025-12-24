@@ -251,8 +251,8 @@ const VerifyData = () => {
             <div>
               <h4 className="font-semibold text-foreground mb-2">How Verification Works</h4>
               <p className="text-sm text-muted-foreground">
-                Your environmental data is stored on-chain in encrypted form using Fully Homomorphic Encryption (FHE). 
-                The encrypted handle represents your data in a secure format. When you click "Decrypt Counter", 
+                Your environmental data is stored on-chain in encrypted form using Fully Homomorphic Encryption (FHE).
+                The encrypted handle represents your data in a secure format. When you click &quot;Decrypt Counter&quot;,
                 your wallet signs a request to reveal the actual value, ensuring only authorized users can access the data.
               </p>
             </div>

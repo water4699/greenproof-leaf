@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import { Leaf, Menu, X, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
@@ -33,7 +34,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-3 group">
             <div className="relative">
               <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-emerald-600 flex items-center justify-center shadow-lg group-hover:shadow-glow transition-all duration-300 group-hover:scale-105">
                 <Leaf className="h-6 w-6 text-white" />
@@ -46,7 +47,7 @@ const Header = () => {
               <span className="text-2xl font-bold text-gradient-forest">GreenProof</span>
               <span className="text-xs text-muted-foreground -mt-1">Leaf Ledger</span>
             </div>
-          </a>
+          </Link>
           
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-2">
