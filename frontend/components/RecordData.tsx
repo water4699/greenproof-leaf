@@ -6,7 +6,21 @@ import { useFhevm } from "@/fhevm/useFhevm";
 import { useInMemoryStorage } from "@/hooks/useInMemoryStorage";
 import { useMetaMaskEthersSigner } from "@/hooks/metamask/useMetaMaskEthersSigner";
 import { useFHECounter } from "@/hooks/useFHECounter";
-import type { EnvironmentalDataType, ValidationResult } from "@/types";
+
+interface EnvironmentalDataType {
+  icon: React.ComponentType<{ className?: string }>;
+  label: string;
+  unit: string;
+  color: string;
+  bgColor: string;
+  textColor: string;
+}
+
+interface ValidationResult {
+  isValid: boolean;
+  value?: number;
+  error?: string;
+}
 
 const dataTypes: EnvironmentalDataType[] = [
   { icon: Cloud, label: "CO₂ Reduction", unit: "tons", color: "from-emerald-500 to-green-600", bgColor: "bg-emerald-500/10", textColor: "text-emerald-600" },
